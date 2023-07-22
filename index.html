@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADN-WEB</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <style>
+        /* Add your custom CSS styles here */
+        body {
+            padding-top: 60px;
+            /* Adjust this value based on your header's height */
+        }
+
+        .jumbotron {
+            background-color: #f8f9fa;
+        }
+
+        .portfolio-item {
+            transition: transform 0.2s;
+        }
+
+        .portfolio-item:hover {
+            transform: scale(1.1);
+        }
+
+        /* Your existing CSS styles */
+
+/* Hamburger Menu Styles */
+.burger-icon {
+  cursor: pointer;
+  display: none; /* Hide the hamburger menu icon initially */
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px 0;
+}
+
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+}
+
+/* Media query for mobile responsiveness */
+@media (max-width: 768px) {
+  .burger-icon {
+    display: block; /* Show the hamburger menu icon for mobile screens */
+  }
+
+  .menu {
+    display: none; /* Hide the regular menu items for mobile screens */
+    flex-direction: column; /* Align menu items vertically */
+  }
+
+  .menu li {
+    margin: 5px 0;
+  }
+
+  .show {
+    display: flex; /* Show the menu items when the hamburger menu is toggled */
+  }
+}
+
+
+
+        /* Styles for devices with a maximum width of 767px (smartphones) */
+@media (max-width: 767px) {
+  /* Your responsive CSS styles go here */
+}
+
+/* Styles for devices with a minimum width of 768px and maximum width of 991px (tablets) */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Your responsive CSS styles go here */
+}
+
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Adnan Amanath</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="jumbotron jumbotron-fluid text-center">
+        <div class="container">
+            <h1 class="display-4">ADN</h1>
+            <img src="./images/306210731_796215968473367_1187461593962916726_n.jpg" alt="Your Name"
+                class="img-fluid rounded-circle">
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="text-center">
+                    <h2>About Me</h2>
+                    <p>Meet Adnan Amanath, a passionate and curious space enthusiast on an interstellar journey to
+                        unravel the mysteries of the cosmos. With a heart that orbits around the stars and a mind that
+                        dreams beyond the bounds of our world, Adnan finds solace in gazing at the night sky, connecting
+                        with the vastness of the universe.
+
+                        From a young age, the wonders of space have ignited a cosmic fire within ADN. Armed with a
+                        telescope and an insatiable thirst for knowledge, they delve into the realms of astronomy,
+                        stargazing, and space exploration. Each celestial sighting fuels their imagination and leaves
+                        them in awe of the intricate dance of the planets and galaxies.
+
+                        Aspiring to contribute to humanity's understanding of the universe, ADN eagerly follows space
+                        missions, scientific discoveries, and the latest cosmic explorations. Their eyes gleam with
+                        excitement as they envision a future where mankind ventures beyond our blue planet, reaching for
+                        the distant horizons of the cosmos.
+
+                        ADN is not just a spectator of the cosmic ballet but an advocate for space exploration and
+                        scientific curiosity. Through their infectious passion, they inspire others to look up and
+                        wonder, to cherish the beauty of the cosmos, and to seek answers to the mysteries that lie
+                        beyond our reach.
+
+                        In the pursuit of understanding the cosmos, ADN remains grounded in the belief that space
+                        exploration serves as a unifying force for humanity. They dream of a world where borders fade,
+                        and humanity collaborates as citizens of the universe, driven by the shared wonder and curiosity
+                        that space inspires.
+
+                        In ADN, the stars have found a fervent admirer, and the universe, a tireless explorer. As they
+                        continue their cosmic odyssey, they hope to foster a world where the pursuit of knowledge and
+                        the beauty of space connect us all, making our little blue dot in the vastness of space feel
+                        like home in the grand tapestry of the cosmos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+
+    <section id="portfolio" class="bg-light py-5">
+        <div class="container">
+            <h1 class="text-center mb-4">GALLERY</h1>
+            <div class="row">
+                <h2 class="text-bg-danger text-center">HAPPY FACES</h2>
+                <!-- happy faces Item 1 -->
+                <div class="col-md-4">
+                    <div class="portfolio-item">
+                        <img width="400" height="300" src="./images/arif-hasan-H9MFEnEXvI4-unsplash.jpg " alt="">
+                    </div>
+                </div>
+                <!-- happy faces Item 2 -->
+
+                <div class="col-md-4">
+                    <div class="portfolio-item">
+                        <img width="400" height="300" src="./images/bennett-tobias-tqwOJAvUIh4-unsplash.jpg" alt="">
+                    </div>
+                </div>
+                <!-- happy faces 3 -->
+                <div class="col-md-4">
+                    <div class="portfolio-item">
+                        <img width="400" height="300" src="./images/bill-wegener-7MD4DR9jbP0-unsplash.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="portfolio" class="bg-light py-5">
+        <div class="container">
+            <div class="row">
+                <!-- happy faces Item 1 -->
+                <div class="col-md-4">
+                    <div class="portfolio-item">
+                        <img width="400" height="300" src="./images/larm-rmah-AEaTUnvneik-unsplash.jpg" alt="">
+                    </div>
+                </div>
+                <!-- happy faces Item 2 -->
+
+                <div class="col-md-4">
+                    <div class="portfolio-item">
+                        <img width="400" height="300" src="./images/nathan-dumlao-Xavq7lKj5j8-unsplash.jpg" alt="">
+                    </div>
+                </div>
+                <!-- happy faces 3 -->
+                <div class="col-md-4">
+                    <div class="portfolio-item">
+                        <img width="400" height="300" src="./images/sanjoy-sadhukhan-WhE7KK-HPmY-unsplash.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="portfolio" class="bg-light py-5">
+        <div class="container">
+            <div class="row">
+                <!-- happy faces Item 1 -->
+                <div class="col-md-4">
+                    <div class="portfolio-item">
+                        <img width="400" height="300" src="./images/seth-doyle-zf9_yiAekJs-unsplash.jpg" alt="">
+                    </div>
+                </div>
+                <!-- happy faces Item 2 -->
+
+                <div class="col-md-4">
+                    <div class="portfolio-item">
+                        <img width="400" height="300" src="./images/shafin-ashraf-eCqiA4HvlIs-unsplash.jpg" alt="">
+                    </div>
+                </div>
+                <!-- happy faces 3 -->
+                <div class="col-md-4">
+                    <div class="portfolio-item">
+                        <img width="400" height="300" src="./images/simon-reza-FeVjriUt_MM-unsplash.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<hr>
+
+
+    <section id="portfolio" class="bg-light py-5">
+        <div class="container">
+            <div class="row">
+                <h2 class="text-bg-danger text-center">SPACE</h2>
+                <!-- Sample Portfolio Item 1 -->
+                <div class="col-md-4">
+                    <div class="portfolio-item">
+                        <iframe width="400" height="300" src="https://www.youtube.com/embed/SkeNMoDlHUU"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+                <!-- Sample Portfolio Item 2 -->
+
+                <div class="col-md-4">
+                    <div class="portfolio-item">
+                        <p><iframe width="400" height="300" src="https://www.youtube.com/embed/UKTHKQobJRg"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay='true'; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe></p>
+                    </div>
+                </div>
+                <!-- Sample Portfolio Item 3 -->
+                <div class="col-md-4">
+                    <div class="portfolio-item">
+                        <iframe width="400" height="300" src="https://www.youtube.com/embed/FkQWpQd9Zdo"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id='Gallery2' class="bg-light py-5">
+        <div class="container">
+            <div class="row">
+                <h2 class="text-bg-danger text-center">NOMADIC</h2>
+                <!-- gallery item 4 -->
+                <div class="col-md-4">
+                    <div class="portfolio-item">
+                        <iframe width="400" height="300" src="https://www.youtube.com/embed/JNXKB_dq8iw"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+                <!-- gallery item 5 -->
+                <div class="col-md-4">
+                    <div class="portfolio-item">
+                        <iframe width="400" height="300" src="https://www.youtube.com/embed/FRnCyRUH9y4"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+                <!-- gallery item 6 -->
+                <div class="col-md-4">
+                    <div class="portfolio-item">
+                        <iframe width="400" height="300" src="https://www.youtube.com/embed/H9-OOl_9r6I"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id='Gallery2' class="bg-light py-5">
+        <div class="container">
+            <div class="row">
+                <h2 class="text-bg-danger text-center">MUSIC LIBRARY</h2>
+                <!-- ml 7 -->
+                <div class="col-md-4">
+                    <div class="portfolio-item">
+
+                        <iframe width="400" height="300" src="https://www.youtube.com/embed/_0kvEDYCrHU"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+                <!-- gallery item 8 -->
+                <div class="col-md-4">
+                    <div class="portfolio-item">
+                        <iframe width="400" height="300" src="https://www.youtube.com/embed/dE1o_uUXTvo"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+                <!-- gallery item 9 -->
+                <div class="col-md-4">
+                    <div class="portfolio-item">
+                        <iframe width="400" height="300" src="https://www.youtube.com/embed/zMvCfm_AjYo"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+    </section>
+
+
+    <section id='Gallery2' class="bg-light py-5">
+        <div class="container">
+            <div class="row">
+                <h2 class="text-bg-danger text-center">LITTLE STARS ON EARTH</h2>
+                <!-- ml 7 -->
+                <div class="col-md-4">
+                    <div class="portfolio-item">
+
+                        <iframe width="400" height="300" src="https://www.youtube.com/embed/j6Jop6K5ag8"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+                <!-- gallery item 8 -->
+                <div class="col-md-4">
+                    <div class="portfolio-item">
+                        <iframe width="400" height="300" src="https://www.youtube.com/embed/iWtKICaN8vY"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+                <!-- gallery item 9 -->
+                <div class="col-md-4">
+                    <div class="portfolio-item">
+                        <iframe width="400" height="300" src="https://www.youtube.com/embed/QvkDDA62-tw"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+    </section>
+
+
+    <!-- Contact Section
+  <section id="contact" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Contact Me</h2>
+        <p><b>call me</b>:8281869996</p>
+        <p><b>Mail</b>:adnamanath@gmail.com</p>
+        <a href="https://www.instagram.com/adn_amanath/"><ion-icon name="logo-instagram"></ion-icon></a>
+    </div>
+  </section> -->
+
+
+    <footer id="contact" style="background-color: #f5f5f5; padding: 20px; text-align: center;">
+        <p>&copy; 2023 FlockY<ion-icon name="bonfire-outline"></ion-icon>. All rights reserved.</p>
+        <p>Contact: adnamanath@gmail.com | Phone: (+91)8281869996</p>
+        <p>Follow me on: <a href="https://www.instagram.com/adn_amanath/" target="_blank"
+                rel="noopener noreferrer"><ion-icon name="logo-instagram"></ion-icon></a> | <a
+                href="https://twitter.com/your-profile" target="_blank" rel="noopener noreferrer"><ion-icon
+                    name="logo-twitter"></ion-icon></a> | <a href="#" target="_blank"
+                rel="noopener noreferrer"><ion-icon name="logo-facebook"></ion-icon></a></p>
+    </footer>
+
+    <!-- ICONS -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
